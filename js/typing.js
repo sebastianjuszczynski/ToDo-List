@@ -3,7 +3,7 @@ const headerSpanCursor = document.querySelector(".header__spanCursor");
 const headerSpanText = "The to do app!!!";
 
 let indexText = 0;
-const time = 50;
+const time = 150;
 
 const addLetter = () => {
   headerSpan.textContent += headerSpanText[indexText];

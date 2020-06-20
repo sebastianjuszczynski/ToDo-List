@@ -6,17 +6,10 @@ const inputSearch = document.querySelector(".form__inputSearch");
 
 const listElements = [...document.querySelectorAll("li")];
 
-// const clearInputSearch = (e) => {
-
-// }
-
 const removeTask = (e) => {
   e.target.parentNode.remove();
   listElements.pop(e.target.parentNode);
   mainSpan.textContent = listElements.length;
-  inputSearch.value = "";
-  list.textContent = "";
-  listElements.forEach((li) => list.appendChild(li));
 };
 
 const addTask = (e) => {
@@ -27,7 +20,6 @@ const addTask = (e) => {
   task.innerHTML = taskName + "<button class='remove'>-</button>";
   list.appendChild(task);
   inputAdd.value = "";
-
   listElements.push(task);
   mainSpan.textContent = listElements.length;
 
@@ -44,8 +36,7 @@ const searchTask = (e) => {
   );
   list.textContent = "";
   tasks.forEach((li) => list.appendChild(li));
-  mainSpan.textContent = tasks.length;
-  console.log(searchText);
+  mainSpan.textContent = tasksElements.length;
 };
 
 inputSearch.addEventListener("input", searchTask);

@@ -32,4 +32,4 @@ const imageChange = () => {
   }
 };
 
-setInterval(imageChange, 2000);
+setInterval(imageChange, 6000);
