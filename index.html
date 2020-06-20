@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App!</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1"><span class="header__span"></span></h1>
+        <img src="../img/1.jpg" alt="" class="header__image">
+        <div class="date">
+            <span class="date__daySpan"></span><span class="date__hourSpan"></span>
+        </div>
+    </header>
+
+    <form action="" class="form">
+        <h2 class="form__header">Tasks list</h2>
+        <input type="text" class="form__inputAdd" placeholder="Input task...">
+        <button class="addTask">+</button>
+        <input type="text" class="form__inputSearch" placeholder="Search for...">
+    </form>
+    <main>
+        <h3 class="main__header">Tasks number: <span class="main__span">0</span></h3>
+        <ul class="main__list"></ul>
+
+    </main>
+    <script src="../js/backgroundChange.js"></script>
+    <script src="../js/typing.js"></script>
+    <script src="../js/date.js"></script>
+    <script src="../js/todo.js"></script>
+</body>
+
+</html>
