@@ -153,9 +153,6 @@ li:nth-child(even) {
   .form__inputAdd {
     width: 70%;
   }
-  .addTask {
-    font-size: 24px;
-  }
   .main__list li button.remove {
     font-size: 16px;
   }
