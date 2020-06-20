@@ -154,13 +154,9 @@ li:nth-child(even) {
     width: 70%;
   }
   .addTask {
-    width: 30px;
-    height: 30px;
-    font-size: 22px;
-    line-height: 30px;
-    align-self: center;
+    font-size: 24px;
   }
   .main__list li button.remove {
-    font-size: 16px;    
+    font-size: 16px;
   }
 }
