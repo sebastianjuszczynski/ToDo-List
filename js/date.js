@@ -1,13 +1,13 @@
 const date = () => {
   const dateNow = new Date();
   const daysNames = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
 
   const currentDay =
@@ -38,7 +38,7 @@ const date = () => {
       : dateNow.getSeconds();
   const year = dateNow.getUTCFullYear();
   document.querySelector(".date__daySpan").textContent = `${
-    daysNames[dateNow.getMonth()]
+    daysNames[dateNow.getDay()]
   }, ${currentDay} ${monthNames[dateNow.getMonth()]} ${year}`;
   document.querySelector(
     ".date__hourSpan"

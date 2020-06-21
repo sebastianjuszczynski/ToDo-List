@@ -45,7 +45,7 @@ const addTask = (e) => {
   list.appendChild(task);
   const button = document.createElement("button");
   button.className = "remove";
-  button.innerHTML = "";
+  button.innerHTML = "-";
   task.appendChild(button);
   inputAdd.value = "";
   listElements.push(task);
