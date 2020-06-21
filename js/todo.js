@@ -11,18 +11,29 @@ const buttonElements = [...document.querySelectorAll(".task button")];
 //   var index = Array.prototype.indexOf.call(this.parent, e.target);
 //   console.log(index);
 // });
+// function isBigEnough(element) {
+//   return element >= 15;
+// }
+
+// [12, 5, 8, 130, 44].findIndex(isBigEnough);
 
 const removeTask = (e) => {
-  let btnActive = e.target.parentNode.textContent.toLowerCase();
+  let btnActive = e.target.parentNode.textContent;
+
+  console.log(typeof btnActive);
   console.log(btnActive);
-  let index = listElements.indexOf(btnActive);
-  
-  if (index > - 1) {
-  listElements.splice(index, 1);
-  e.target.parentNode.remove();
-  mainSpan.textContent = listElements.length;
+
+  let index = listElements.findIndex((elem) => elem.textContent === btnActive);
+  console.log(typeof index);
+  console.log(index);
+  if (index > -1) {
+    listElements.splice(index, 1);
+    e.target.parentNode.remove();
+    mainSpan.textContent = listElements.length;
   }
 };
+
+// console.log(array1.toString());
 
 const addTask = (e) => {
   e.preventDefault();
